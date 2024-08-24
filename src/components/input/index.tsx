@@ -11,11 +11,12 @@ function InputField({
   name,
   size = "medium",
   border = "rounded",
+  label,
 }: InputFieldProps) {
   return (
     <ThemeProvider>
-      <div>
-        <label>{name}</label>
+      <div className="flex flex-col gap-1">
+        <label className="text-sm">{label}</label>
         <input
           value={value}
           onChange={onChange}
@@ -48,4 +49,5 @@ export interface InputFieldProps {
   name?: string;
   size?: "small" | "medium" | "large";
   border?: "rounded" | "none";
+  label ?: string;
 }

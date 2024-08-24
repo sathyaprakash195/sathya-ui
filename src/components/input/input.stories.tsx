@@ -9,5 +9,6 @@ export default {
 export const Default = {
   args:{
     placeholder:"Basic Input",
+    label:"Basic Input",
   } as InputFieldProps,
 };

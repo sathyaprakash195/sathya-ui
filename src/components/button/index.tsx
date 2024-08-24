@@ -6,7 +6,7 @@ function Button({ title, onClick, variant, size = "medium" }: ButtonProps) {
     <ThemeProvider>
       <button
         onClick={onClick}
-        className={classNames("px-5 p-2", {
+        className={classNames("px-5 p-2 cursor-pointer", {
           "bg-primary text-white border-none": variant === "contained",
           "bg-white text-primary border border-primary": variant === "outlined",
           "text-xs h-8": size === "small",
