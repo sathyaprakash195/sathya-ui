@@ -34,6 +34,7 @@
     "@types/rollup-plugin-peer-deps-external": "^2.2.5",
     "autoprefixer": "^10.4.20",
     "babel-loader": "^8.3.0",
+    "chromatic": "^11.7.1",
     "postcss": "^8.4.41",
     "react": "^18.3.1",
     "rollup": "^4.21.0",
