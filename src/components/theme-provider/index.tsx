@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 
 function ThemeProvider({
-  primaryColor = "#000",
+  primaryColor = document.body.style.getPropertyValue("--color-primary") || "blue",
   children,
 }: ThemeProviderProps) {
   useEffect(() => {
